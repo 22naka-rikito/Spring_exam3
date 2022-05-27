@@ -12,6 +12,9 @@
 </head>
 <body>
 	<h1>検索条件を入力してください</h1>
+	<c:if test="${not empty msg}">
+		${fn:escapeXml(msg)}
+	</c:if>
 	<form:form action="result" modelAttribute="top" method="post">
 		<p>
 			product_id:

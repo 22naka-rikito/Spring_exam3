@@ -26,6 +26,11 @@ public class BasicController {
     @RequestMapping("/result")
     public String result(@ModelAttribute("top") TopForm form, Model model) {
     	Product product = productService.findById(form.getProductId());
+    	if(product == null) {
+    		System.out.print("a");
+    		model.addAttribute("msg", "対象のデータはありません。");
+    		return "top";
+    	}
     	model.addAttribute("product", product);
         return "searchResult";
     }
