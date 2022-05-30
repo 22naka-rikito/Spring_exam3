@@ -19,7 +19,7 @@ public class BasicController {
 
     @RequestMapping("/top")
     public String top(@ModelAttribute("top") TopForm form, Model model) {
-    	
+    	System.out.println("cotrollTop");
         return "top";
     }
     
