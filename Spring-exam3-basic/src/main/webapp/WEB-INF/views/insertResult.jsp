@@ -8,10 +8,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>演習課題3 発展問題 検索結果画面</title>
+<title>演習課題3 発展問題 登録画面</title>
 </head>
 <body>
-	<h1>検索結果</h1>
+	<h1>登録結果</h1>
 	<p>product_id:${fn:escapeXml(product.getProductId())}</p>
 	<p>product_name:${fn:escapeXml(product.getProductName())}</p>
 	<p>price:${fn:escapeXml(product.getPrice())}</p>

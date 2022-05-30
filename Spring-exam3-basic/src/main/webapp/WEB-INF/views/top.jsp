@@ -15,13 +15,13 @@
 	<form:form action="result" modelAttribute="top" method="post">
 		<p>
 			product_name:
-			<form:input path="productId" />
+			<form:input path="productName" />
 		</p>
 		<p>
 			price:
 			<form:input path="price" />
 		</p>
-		<form:button>検索</form:button>
-		<form:button>登録</form:button>
+		<form:button name="search">検索</form:button>
+		<form:button name="insert">登録</form:button>
 	</form:form>
 </body>
