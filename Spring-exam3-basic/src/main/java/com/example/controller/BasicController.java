@@ -25,6 +25,7 @@ public class BasicController {
     
     @RequestMapping("/result")
     public String result(@ModelAttribute("top") TopForm form, Model model) {
+    	System.out.println("cotroll");
     	Product product = productService.findById(form.getProductId());
     	model.addAttribute("product", product);
         return "searchResult";
